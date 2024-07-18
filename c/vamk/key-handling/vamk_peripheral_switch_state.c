@@ -1,6 +1,6 @@
 ///Imports
 #include <stddef.h>
-#include <stdio.h>
+#include <stdio.h> //TODO remove?
 #include "hardware/i2c.h"
 #include "time.h"
 #include "vamk_keymap_config.h"
@@ -24,6 +24,7 @@ static const uint8_t REGISTER_B_MAX_PIN_NUMBER = 8;
 static const uint8_t REGISTER_A_MIN_PIN_NUMBER = 21;
 static const uint8_t REGISTER_A_MAX_PIN_NUMBER = 28;
 
+//TODO make a reusable library for the MCP23017 inter-op
 static const uint8_t GPIO_A_REGISTER_ADDRESS = 0x12;
 static const uint8_t GPIO_B_REGISTER_ADDRESS = 0x13;
 static const uint8_t IODIR_A_REGISTER_ADDRESS = 0x00;
